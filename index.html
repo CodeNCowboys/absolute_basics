@@ -17,5 +17,150 @@
       An excerpt from
       <a href="https://en.wikipedia.org/wiki/The_Hobbit">The Hobbit</a>
     </p>
+
+    <!-- Part 2: Lists, tables, and forms -->
+    <!-- Lists -->
+    <h2>The Fellowship</h2>
+    <ul>
+      <li>Frodo</li>
+      <li>Gandalf</li>
+      <li>Aragorn</li>
+      <li>Sam</li>
+      <li>Legolas</li>
+      <li>Gimli</li>
+      <li>Pippin</li>
+      <li>Merry</li>
+      <li>Boromir</li>
+    </ul>
+    <h2>Movies</h2>
+    <ol>
+      <li>The Fellowship of the Ring - The Lord of the Rings</li>
+      <li>The Two Towers - The Lord of the Rings</li>
+      <li>The Return of the King - The Lord of the Rings</li>
+      <li>An Unexpected Journey - The Hobbit</li>
+      <li>The Desolation of Smaug - The Hobbit</li>
+      <li>The Battle of the Five Armies - The Hobbit</li>
+    </ol>
+    <!-- Tables -->
+    <h2>Cast</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Actor</th>
+        <th>Race</th>
+        <th>Location</th>
+        <th>Birth Date</th>
+      </tr>
+      <tr>
+        <td>Frodo Baggins</td>
+        <td>Elijah Wood</td>
+        <td rowspan="4">Hobbit</td>
+        <td>The Shire</td>
+        <td>January 28, 1981</td>
+      </tr>
+      <tr>
+        <td>Samwise Gamgee</td>
+        <td>Sean Astin</td>
+
+        <td>The Shire</td>
+        <td>February 25, 1971</td>
+      </tr>
+      <tr>
+        <td>Merriweather Brandybuck</td>
+        <td>Dominic Monaghan</td>
+
+        <td>The Shire</td>
+        <td>December 8, 1976</td>
+      </tr>
+      <tr>
+        <td>Peregrin Took</td>
+        <td>Billy Boyd</td>
+
+        <td>The Shire</td>
+        <td>August 28, 1968</td>
+      </tr>
+      <tr>
+        <td>Gandalf</td>
+        <td>Ian McKellan</td>
+        <td>Wizard</td>
+        <td>Mobile</td>
+        <td>May 25, 1939</td>
+      </tr>
+      <tr>
+        <td>Aragorn</td>
+        <td>Viggo Mortensen</td>
+        <td>Human</td>
+        <td>Mobile</td>
+        <td>October 20, 1958</td>
+      </tr>
+      <tr>
+        <td>Boromir</td>
+        <td>Sean Bean</td>
+        <td>Human</td>
+        <td>Gondor</td>
+        <td>April 17, 1959</td>
+      </tr>
+      <tr>
+        <td>Legolas</td>
+        <td>Orlando Bloom</td>
+        <td>Elf</td>
+        <td>Mirkwood</td>
+        <td>January 13, 1977</td>
+      </tr>
+      <tr>
+        <td>Gimli</td>
+        <td>John Rhys Davies</td>
+        <td>Dwarf</td>
+        <td>Blue Mountains</td>
+        <td>May 5, 1944</td>
+      </tr>
+    </table>
+    <!-- Forms -->
+    <h2>Creata a Character</h2>
+    <form action="">
+      <div>
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" required />
+      </div>
+      <div>
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" />
+      </div>
+      <div>
+        <label for="race-select">Race</label>
+        <select name="race" id="race-select">
+          <option value="">--Select a race--</option>
+          <option value="human">Human</option>
+          <option value="elf">Elf</option>
+          <option value="dwarf">Dwarf</option>
+          <option value="hobbit">Hobbit</option>
+          <option value="wizard">Wizard</option>
+          <option value="orc">Orc</option>
+        </select>
+      </div>
+      <div>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" />
+      </div>
+      <div>
+        <input type="radio" id="good" name="alignment" value="good" />
+        <label for="good">Good</label>
+      </div>
+      <div>
+        <input type="radio" id="evil" name="alignment" value="evil" />
+        <label for="evil">Evil</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="neutral"
+          name="alignment"
+          value="neutral"
+          checked
+        />
+        <label for="neutral">Neutral</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
